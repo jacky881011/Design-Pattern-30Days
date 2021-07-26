@@ -8,11 +8,21 @@ public class Main {
 
         cal1.setStrategy(Dotype.ADD);
         int ans1 = cal1.execute(4,5);
+        System.out.println("ADD");
         System.out.println(ans1);
 
         cal1.setStrategy(Dotype.DIVIDE);
         double ans2 = cal1.execute(10,4);
+        System.out.println("DIVIDE");
         System.out.println(ans2);
+
+        cal1.setStrategy(Dotype.MINUS);
+        int ans3 = cal1.execute(9,4);
+        System.out.println("MINUS");
+        System.out.println(ans3);
+
+
+
 
 
 
@@ -21,11 +31,11 @@ public class Main {
         PriceCaculator pc1 = new PriceCaculator(bus1);
         PriceCaculator pc2 = new PriceCaculator(mrt1);
 
-        pc2.setStrategy2(mrt1);
+        //pc2.setStrategy2(mrt1);
         System.out.println(pc2.calculate(20));
 
 
-        pc1.setStrategy2(bus1);
+        //pc1.setStrategy2(bus1);
         System.out.println(pc1.calculate(9));
 
 
@@ -70,8 +80,8 @@ public class Main {
 
         //策略模式
         public int execute(int a, int b){
-
-            return  strategy.caculate(a ,b );
+            now = strategy.caculate(a,b);
+            return  now;
         }
         public void reset(){
             this.now = 0;
