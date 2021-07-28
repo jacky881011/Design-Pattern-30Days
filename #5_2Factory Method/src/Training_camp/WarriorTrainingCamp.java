@@ -10,7 +10,7 @@ import Adventurer_type.Warrior;
 public class WarriorTrainingCamp implements TrainingCamp{
     @Override
     public Adventurer trainAdventurer(){
-        System.out.println("訓練一個貼身的戰士");
+        System.out.println("訓練一個進身的戰士");
         return new Warrior();                       //回傳物件給Training Camp
     }
 
