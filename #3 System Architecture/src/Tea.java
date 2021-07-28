@@ -12,6 +12,10 @@ public class Tea extends Drink {
         return  tea;
     }
 
+    public void Show_Tea(){
+        System.out.println("You order the "+ getTeaType()+"\nSuger: "+suger+"\n"+"Ice: "+ice+"\n");
+    }
+
 
     enum TeaType{
         LEMON , OOLONG , GINGER , HONEY

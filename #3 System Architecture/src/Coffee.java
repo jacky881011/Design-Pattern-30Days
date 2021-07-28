@@ -13,6 +13,10 @@ public class Coffee extends Drink{
         return  coffee;
     }
 
+    public void Show_coffee(){
+        System.out.println("You order the "+ getCoffeeType()+"\nSuger: "+suger+"\n"+"Ice: "+ice+"\n");
+    }
+
 
 
 
