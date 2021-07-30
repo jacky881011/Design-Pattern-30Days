@@ -36,6 +36,7 @@ public class Main {
 
        System.out.println("\n\n\n");
        // ====================Add Simple Set===============================
+       System.out.println("----------Simple Set---------");
        SimpleSet simpleSet =new SimpleSet();
        simpleSet.show();
 
