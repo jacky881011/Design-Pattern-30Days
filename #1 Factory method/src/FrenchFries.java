@@ -17,10 +17,6 @@ public class FrenchFries implements Product{
         System.out.println("I'm "+ state +" FrenchFries"+" , size is "+size);
     }
 
-    @Override
-    public void sold(){
-
-    }
 
 
 }

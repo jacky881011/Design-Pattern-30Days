@@ -3,7 +3,7 @@ public class MRTStrategy implements IStrategy2{
 
 
     @Override
-    public int calculate(int km){
+    public int calculate(int km){               //注意到不是用 method 是constructor  所以會有回傳值
         int count = 0;
         if (km<=0)
             return count;
